@@ -1,0 +1,26 @@
+<h2> Lista de Clientes </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Marca do carro </th>
+            <th> Modelo do carro </th>
+            <th> Placa do carro </th>
+            <th>Data de entrada</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let cliente of clientes">
+            <td>{{ cliente.marcadocarro }}</td>
+            <td>{{ cliente.modelodocarro }}</td>
+            <td>{{ cliente.placadocarro }}</td>
+            <td>{{cliente.dataDeEntrada}}</td>
+            <td >
+                <button (click) = "updateCliente(cliente.id)" class="btn btn-info"> Editar </button>
+                <button (click) = "deleteCliente(cliente.id)" class="btn btn-danger" style="margin-left: 10px"> Deletar </button>
+                <button (click) = "registrarSaidaCliente(cliente.id)" class="btn btn-success"style="margin-left: 10px"> Registrar Saída </button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>

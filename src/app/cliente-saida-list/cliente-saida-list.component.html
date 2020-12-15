@@ -1,0 +1,19 @@
+<h2> Lista de saídas </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Data de Entrada </th>
+            <th> Data de Saida</th>
+            <th> Valor pago</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let cliente of clientes">
+            <td>{{ cliente.dataDeEntrada }}</td>
+            <td>{{ cliente.dataDeSaida }}</td>
+            <td>{{ cliente.valorTotal }}</td>
+        </tr>
+    </tbody>
+</table>
+
+

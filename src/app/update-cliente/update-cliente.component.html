@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+    <h3 style="margin-top: 50px"> Editar Cliente </h3>
+    <form (ngSubmit) = "onSubmit()" >
+    
+        <div class="form-group">
+            <label> Marca do carro </label>
+            <input type="text" class="form-control" id="nome"
+                [(ngModel)] = "cliente.marcadocarro" name="nome">
+        </div>
+    
+        <div class="form-group">
+            <label> Modelo do carro </label>
+            <input type="text" class="form-control" id="sobrenome"
+                [(ngModel)] = "cliente.modelodocarro" name="sobrenome">
+        </div>  
+    
+        <div class="form-group">
+            <label> Placa do carro </label>
+            <input type="text" class="form-control" id="placadocarro"
+                [(ngModel)] = "cliente.placadocarro" name="placadocarro">
+        </div>
+    
+        <button class="btn btn-success" type="submit"> Confirmar </button>
+    
+    </form>
+    </div> 
